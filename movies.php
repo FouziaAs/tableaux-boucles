@@ -11,8 +11,9 @@ $movies = [
 asort($movies);
 
 foreach($movies as $key => $movie) {
-    echo " {$movie} => {$key} ";
-    
+    if ($key > 2000){
+       echo "{$movies} => {$key}"; 
 }
-var_dump($movie);
+}
+var_dump($movies);
 ?>
